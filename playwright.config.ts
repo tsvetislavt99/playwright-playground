@@ -19,7 +19,7 @@ const config: PlaywrightTestConfig = {
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 5000
+    timeout: 5000,
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -50,20 +50,19 @@ const config: PlaywrightTestConfig = {
         ...devices['Desktop Chrome'],
       },
     },
+    // {
+    //   name: 'webkit',
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //   },
+    // },
 
-    {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-      },
-    },
-
-    {
-      name: 'webkit',
-      use: {
-        ...devices['Desktop Safari'],
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //   },
+    // },
 
     /* Test against mobile viewports. */
     // {
@@ -72,12 +71,12 @@ const config: PlaywrightTestConfig = {
     //     ...devices['Pixel 5'],
     //   },
     // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: {
-    //     ...devices['iPhone 12'],
-    //   },
-    // },
+    {
+      name: 'Mobile Safari',
+      use: {
+        ...devices['iPhone 12'],
+      },
+    },
 
     /* Test against branded browsers. */
     // {
