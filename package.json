@@ -1,0 +1,17 @@
+{
+  "name": "playwright-playground",
+  "version": "1.0.0",
+  "description": "A playground for a playwright presentation.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "playwright",
+    "e2e",
+    "testing"
+  ],
+  "author": "Tsvetislav Todorov",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
+  }
+}
