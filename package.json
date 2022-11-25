@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "A playground for a playwright presentation.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test-trace": "npx playwright test --trace",
+    "test-headed": "npx playwright test --headed"
+  },
   "keywords": [
     "playwright",
     "e2e",
